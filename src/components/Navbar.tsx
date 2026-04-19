@@ -1,14 +1,39 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 
-const links = [
-  { href: "#home", label: "Home" },
-  { href: "#products", label: "Products" },
-  { href: "#featured", label: "Featured" },
-  { href: "#about", label: "About" },
-  { href: "#contact", label: "Contact" },
+type NavLink = { label: string } & ({ href: string } | { to: string });
+
+const links: NavLink[] = [
+  { href: "/#home", label: "Home" },
+  { to: "/products", label: "Products" },
+  { href: "/#featured", label: "Featured" },
+  { href: "/#about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ];
+
+function NavItem({ link, onClick }: { link: NavLink; onClick?: () => void }) {
+  const cls =
+    "text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full";
+  if ("to" in link) {
+    return (
+      <Link
+        to={link.to}
+        onClick={onClick}
+        className={cls}
+        activeProps={{ className: "text-primary" }}
+      >
+        {link.label}
+      </Link>
+    );
+  }
+  return (
+    <a href={link.href} onClick={onClick} className={cls}>
+      {link.label}
+    </a>
+  );
+}
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +55,7 @@ export function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-18 flex items-center justify-between py-4">
-        <a href="#home" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <div className="h-10 w-10 rounded-lg bg-gradient-primary flex items-center justify-center shadow-elegant">
             <span className="font-display text-2xl text-primary-foreground">A</span>
           </div>
@@ -42,23 +67,18 @@ export function Navbar() {
               OPC Pvt Ltd
             </div>
           </div>
-        </a>
+        </Link>
 
         <ul className="hidden md:flex items-center gap-8">
           {links.map((l) => (
-            <li key={l.href}>
-              <a
-                href={l.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full"
-              >
-                {l.label}
-              </a>
+            <li key={l.label}>
+              <NavItem link={l} />
             </li>
           ))}
         </ul>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-semibold shadow-elegant hover:scale-105 transition-transform"
         >
           Enquire Now
@@ -83,18 +103,12 @@ export function Navbar() {
           >
             <ul className="flex flex-col p-6 gap-4">
               {links.map((l) => (
-                <li key={l.href}>
-                  <a
-                    href={l.href}
-                    onClick={() => setOpen(false)}
-                    className="block text-base font-medium text-foreground hover:text-primary"
-                  >
-                    {l.label}
-                  </a>
+                <li key={l.label}>
+                  <NavItem link={l} onClick={() => setOpen(false)} />
                 </li>
               ))}
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex justify-center px-5 py-3 rounded-lg bg-gradient-primary text-primary-foreground font-semibold"
               >
