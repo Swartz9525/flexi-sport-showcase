@@ -58,7 +58,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-secondary-foreground/70">
             {["Cricket", "Badminton", "Jerseys", "Fitness", "Football"].map((l) => (
               <li key={l}>
-                <a href="#products" className="hover:text-primary transition-colors">
+                <a href="/products" className="hover:text-primary transition-colors">
                   {l}
                 </a>
               </li>
