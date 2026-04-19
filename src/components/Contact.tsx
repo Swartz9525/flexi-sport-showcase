@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, User } from "lucide-react";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -42,9 +42,10 @@ export function Contact() {
             className="lg:col-span-2 space-y-6"
           >
             {[
-              { icon: Phone, label: "Call us", value: "+91 98765 43210" },
-              { icon: Mail, label: "Email us", value: "hello@arbeitsports.in" },
-              { icon: MapPin, label: "Visit us", value: "Connaught Place, New Delhi 110001" },
+              { icon: User, label: "Owner", value: "Gopal Kumar" },
+              { icon: Phone, label: "Call us", value: "+91 8521121289" },
+              { icon: Mail, label: "Email us", value: "gopalkumar240199@gmail.com" },
+              { icon: MapPin, label: "Visit us", value: "paswan complex dehri on sone" },
             ].map((c) => (
               <div
                 key={c.label}

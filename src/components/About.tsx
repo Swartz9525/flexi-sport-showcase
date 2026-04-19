@@ -3,10 +3,10 @@ import { CheckCircle2 } from "lucide-react";
 import owner from "@/assets/owner.jpg";
 
 const points = [
-  "10+ years serving athletes, academies, and clubs",
-  "Direct partnerships with leading equipment makers",
-  "Custom orders, team kits, and bulk supply",
-  "Dedicated after-sales service & warranty support",
+  "Newly launched store bringing quality sports goods to our town",
+  "Selling top-tier sports products in both retail and bulk orders",
+  "Growing selection of accessible equipment for local athletes",
+  "Dedicated to friendly, personalized customer service",
 ];
 
 export function About() {
@@ -34,8 +34,8 @@ export function About() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-primary-foreground">
-              <div className="font-display text-2xl">Arjun Bhatia</div>
-              <div className="text-sm uppercase tracking-[0.2em] text-primary">Founder & CEO</div>
+              <div className="font-display text-2xl">Gopal Kumar</div>
+              <div className="text-sm uppercase tracking-[0.2em] text-primary">Owner</div>
             </div>
           </div>
           <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full bg-gradient-primary blur-3xl opacity-50" />
@@ -48,20 +48,16 @@ export function About() {
           transition={{ duration: 0.7, delay: 0.15 }}
         >
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            About Arbeit Sports
+            About the Owner
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-display">
-            From a Local Store to a <span className="text-gradient-primary">Trusted Name</span>
+            Your Local <span className="text-gradient-primary">Sports Hub</span>
           </h2>
           <p className="mt-6 text-base text-secondary-foreground/80 leading-relaxed">
-            Arbeit Sports (OPC) Pvt Ltd was founded with one mission — to make world-class sporting
-            equipment accessible to every athlete in India. From humble beginnings as a
-            single-counter store, we now supply gear to clubs, schools, and individual athletes
-            across the country.
+            Started just months ago by a local small businessman, our goal is to bring top-quality sporting products directly to our town. Whether you're an individual athlete looking for retail gear or a team needing bulk supplies, we are here to provide the best equipment with a personal touch.
           </p>
           <p className="mt-4 text-base text-secondary-foreground/80 leading-relaxed">
-            Every product we stock is hand-picked, tested, and backed by warranty. When you choose
-            Arbeit, you choose performance.
+            Every product we stock is carefully chosen to ensure reliability. When you shop with us, you're supporting a growing local business committed to sports and fitness in the community.
           </p>
 
           <ul className="mt-8 space-y-3">
@@ -75,21 +71,21 @@ export function About() {
 
           <div className="mt-10 grid grid-cols-3 gap-6 pt-8 border-t border-border/20">
             <div>
-              <div className="font-display text-4xl text-primary">10+</div>
+              <div className="font-display text-4xl text-primary">New</div>
               <div className="text-xs uppercase tracking-wider text-secondary-foreground/60 mt-1">
-                Years
+                Startup
               </div>
             </div>
             <div>
-              <div className="font-display text-4xl text-primary">500+</div>
+              <div className="font-display text-4xl text-primary">Local</div>
               <div className="text-xs uppercase tracking-wider text-secondary-foreground/60 mt-1">
-                Clients
+                Business
               </div>
             </div>
             <div>
-              <div className="font-display text-4xl text-primary">50+</div>
+              <div className="font-display text-4xl text-primary">Retail</div>
               <div className="text-xs uppercase tracking-wider text-secondary-foreground/60 mt-1">
-                Cities
+                & Bulk
               </div>
             </div>
           </div>
