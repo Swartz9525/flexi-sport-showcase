@@ -11,7 +11,7 @@ export function Footer() {
             </div>
             <div>
               <div className="font-display text-xl tracking-wide">
-                ARBET <span className="text-primary">SPORTS</span>
+                ARBEIT <span className="text-primary">SPORTS</span>
               </div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-secondary-foreground/60">
                 OPC Pvt Ltd
@@ -69,7 +69,7 @@ export function Footer() {
 
       <div className="border-t border-secondary-foreground/10">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-secondary-foreground/60">
-          <div>© {new Date().getFullYear()} Arbet Sports (OPC) Pvt Ltd. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Arbeit Sports (OPC) Pvt Ltd. All rights reserved.</div>
           <div>Crafted for champions.</div>
         </div>
       </div>

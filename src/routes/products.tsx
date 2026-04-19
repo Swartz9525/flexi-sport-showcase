@@ -8,17 +8,17 @@ export const Route = createFileRoute("/products")({
   component: ProductsPage,
   head: () => ({
     meta: [
-      { title: "All Products — Arbet Sports (OPC) Pvt Ltd" },
+      { title: "All Products — Arbeit Sports (OPC) Pvt Ltd" },
       {
         name: "description",
         content:
-          "Browse the full Arbet Sports catalog — cricket, badminton, jerseys, fitness and football gear with category filters.",
+          "Browse the full Arbeit Sports catalog — cricket, badminton, jerseys, fitness and football gear with category filters.",
       },
-      { property: "og:title", content: "All Products — Arbet Sports" },
+      { property: "og:title", content: "All Products — Arbeit Sports" },
       {
         property: "og:description",
         content:
-          "Filter and explore every product Arbet Sports offers, from tournament-grade kits to custom jerseys.",
+          "Filter and explore every product Arbeit Sports offers, from tournament-grade kits to custom jerseys.",
       },
     ],
   }),

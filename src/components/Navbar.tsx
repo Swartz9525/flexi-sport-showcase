@@ -61,7 +61,7 @@ export function Navbar() {
           </div>
           <div className="leading-tight">
             <div className="font-display text-xl tracking-wide text-secondary">
-              ARBET <span className="text-primary">SPORTS</span>
+              ARBEIT <span className="text-primary">SPORTS</span>
             </div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
               OPC Pvt Ltd

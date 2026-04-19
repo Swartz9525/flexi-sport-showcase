@@ -11,13 +11,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Arbet Sports (OPC) Pvt Ltd — Premium Sporting Equipment in India" },
+      { title: "Arbeit Sports (OPC) Pvt Ltd — Premium Sporting Equipment in India" },
       {
         name: "description",
         content:
-          "Arbet Sports supplies premium cricket, badminton, fitness, jerseys & football gear to athletes, clubs and academies across India.",
+          "Arbeit Sports supplies premium cricket, badminton, fitness, jerseys & football gear to athletes, clubs and academies across India.",
       },
-      { property: "og:title", content: "Arbet Sports — Built for Champions" },
+      { property: "og:title", content: "Arbeit Sports — Built for Champions" },
       {
         property: "og:description",
         content:
