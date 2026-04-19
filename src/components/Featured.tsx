@@ -36,7 +36,7 @@ export function Featured() {
           className="text-center max-w-2xl mx-auto"
         >
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            Why Arbet
+            Why Arbeit
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-display text-secondary">
             Built on Performance, <span className="text-gradient-primary">Driven by Passion</span>

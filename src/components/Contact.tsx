@@ -43,7 +43,7 @@ export function Contact() {
           >
             {[
               { icon: Phone, label: "Call us", value: "+91 98765 43210" },
-              { icon: Mail, label: "Email us", value: "hello@arbetsports.in" },
+              { icon: Mail, label: "Email us", value: "hello@arbeitsports.in" },
               { icon: MapPin, label: "Visit us", value: "Connaught Place, New Delhi 110001" },
             ].map((c) => (
               <div

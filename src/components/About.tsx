@@ -23,7 +23,7 @@ export function About() {
           <div className="relative aspect-[4/5] max-w-md mx-auto rounded-3xl overflow-hidden shadow-elegant">
             <img
               src={owner}
-              alt="Founder of Arbet Sports"
+              alt="Founder of Arbeit Sports"
               loading="lazy"
               width={800}
               height={1000}
@@ -47,20 +47,20 @@ export function About() {
           transition={{ duration: 0.7, delay: 0.15 }}
         >
           <span className="text-xs font-bold uppercase tracking-[0.25em] text-primary">
-            About Arbet Sports
+            About Arbeit Sports
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-display">
             From a Local Store to a <span className="text-gradient-primary">Trusted Name</span>
           </h2>
           <p className="mt-6 text-base text-secondary-foreground/80 leading-relaxed">
-            Arbet Sports (OPC) Pvt Ltd was founded with one mission — to make
+            Arbeit Sports (OPC) Pvt Ltd was founded with one mission — to make
             world-class sporting equipment accessible to every athlete in India.
             From humble beginnings as a single-counter store, we now supply gear
             to clubs, schools, and individual athletes across the country.
           </p>
           <p className="mt-4 text-base text-secondary-foreground/80 leading-relaxed">
             Every product we stock is hand-picked, tested, and backed by
-            warranty. When you choose Arbet, you choose performance.
+            warranty. When you choose Arbeit, you choose performance.
           </p>
 
           <ul className="mt-8 space-y-3">
