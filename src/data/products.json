@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Pro Cricket Kit",
+    "category": "cricket",
+    "image": "/src/assets/product-cricket.jpg",
+    "description": "Tournament-grade cricket kit including English willow bat, premium leather pads, gloves, helmet with grille, and match ball. Built for serious players who demand performance."
+  },
+  {
+    "id": 2,
+    "title": "Elite Badminton Set",
+    "category": "badminton",
+    "image": "/src/assets/product-badminton.jpg",
+    "description": "Lightweight carbon-fiber racket paired with feather shuttlecocks. Engineered for speed, precision, and the perfect smash on every rally."
+  },
+  {
+    "id": 3,
+    "title": "Custom Team Jerseys",
+    "category": "jersey",
+    "image": "/src/assets/product-jersey.jpg",
+    "description": "Sublimated polyester jerseys with custom names, numbers, and team logos. Breathable fabric, moisture-wicking, ready for any league."
+  },
+  {
+    "id": 4,
+    "title": "Complete Fitness Bundle",
+    "category": "fitness",
+    "image": "/src/assets/product-fitness.jpg",
+    "description": "Hex dumbbells, kettlebells, and resistance bands for a full home gym setup. Train smarter, recover faster, perform stronger."
+  },
+  {
+    "id": 5,
+    "title": "Football Pro Pack",
+    "category": "football",
+    "image": "/src/assets/product-football.jpg",
+    "description": "FIFA-quality match ball with premium leather cleats. Designed for grip, control, and explosive speed on natural turf."
+  },
+  {
+    "id": 6,
+    "title": "Junior Cricket Starter",
+    "category": "cricket",
+    "image": "/src/assets/product-cricket.jpg",
+    "description": "Lightweight kit specially designed for young cricketers aged 8-14. Safe, comfortable, and built to grow with your child's game."
+  }
+]
