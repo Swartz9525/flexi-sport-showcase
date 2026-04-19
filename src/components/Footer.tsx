@@ -19,8 +19,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 text-sm text-secondary-foreground/70 max-w-md leading-relaxed">
-            Premium sporting equipment for athletes, academies, and clubs across India.
-            Built on quality, driven by passion.
+            Premium sporting equipment for athletes, academies, and clubs across India. Built on
+            quality, driven by passion.
           </p>
           <div className="mt-6 flex gap-3">
             {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (

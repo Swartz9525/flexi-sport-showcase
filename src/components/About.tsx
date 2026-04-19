@@ -11,7 +11,10 @@ const points = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-dark text-secondary-foreground overflow-hidden">
+    <section
+      id="about"
+      className="py-24 bg-gradient-dark text-secondary-foreground overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -32,9 +35,7 @@ export function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-primary-foreground">
               <div className="font-display text-2xl">Arjun Bhatia</div>
-              <div className="text-sm uppercase tracking-[0.2em] text-primary">
-                Founder & CEO
-              </div>
+              <div className="text-sm uppercase tracking-[0.2em] text-primary">Founder & CEO</div>
             </div>
           </div>
           <div className="absolute -top-6 -right-6 w-32 h-32 rounded-full bg-gradient-primary blur-3xl opacity-50" />
@@ -53,14 +54,14 @@ export function About() {
             From a Local Store to a <span className="text-gradient-primary">Trusted Name</span>
           </h2>
           <p className="mt-6 text-base text-secondary-foreground/80 leading-relaxed">
-            Arbeit Sports (OPC) Pvt Ltd was founded with one mission — to make
-            world-class sporting equipment accessible to every athlete in India.
-            From humble beginnings as a single-counter store, we now supply gear
-            to clubs, schools, and individual athletes across the country.
+            Arbeit Sports (OPC) Pvt Ltd was founded with one mission — to make world-class sporting
+            equipment accessible to every athlete in India. From humble beginnings as a
+            single-counter store, we now supply gear to clubs, schools, and individual athletes
+            across the country.
           </p>
           <p className="mt-4 text-base text-secondary-foreground/80 leading-relaxed">
-            Every product we stock is hand-picked, tested, and backed by
-            warranty. When you choose Arbeit, you choose performance.
+            Every product we stock is hand-picked, tested, and backed by warranty. When you choose
+            Arbeit, you choose performance.
           </p>
 
           <ul className="mt-8 space-y-3">

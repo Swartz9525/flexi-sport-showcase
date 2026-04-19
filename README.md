@@ -25,18 +25,18 @@ Built with a focus on performance, smooth motion, clean typography, and a strong
 
 ## 🛠 Tech Stack
 
-| Layer        | Technology                                  |
-| ------------ | ------------------------------------------- |
-| Framework    | **React 19** + **TanStack Start v1** (SSR)  |
-| Build Tool   | **Vite 7**                                  |
-| Routing      | **TanStack Router** (file-based)            |
-| Styling      | **Tailwind CSS v4** (semantic design tokens)|
-| Animations   | **Framer Motion**                           |
-| UI Primitives| **shadcn/ui** + Radix                       |
-| Icons        | **lucide-react**                            |
-| Language     | **TypeScript** (strict mode)                |
-| Data         | Local **`products.json`**                   |
-| Deployment   | Cloudflare Workers (Edge)                   |
+| Layer         | Technology                                   |
+| ------------- | -------------------------------------------- |
+| Framework     | **React 19** + **TanStack Start v1** (SSR)   |
+| Build Tool    | **Vite 7**                                   |
+| Routing       | **TanStack Router** (file-based)             |
+| Styling       | **Tailwind CSS v4** (semantic design tokens) |
+| Animations    | **Framer Motion**                            |
+| UI Primitives | **shadcn/ui** + Radix                        |
+| Icons         | **lucide-react**                             |
+| Language      | **TypeScript** (strict mode)                 |
+| Data          | Local **`products.json`**                    |
+| Deployment    | Cloudflare Workers (Edge)                    |
 
 ---
 
@@ -101,9 +101,11 @@ Products are loaded from **`src/data/products.json`** using dynamic imports insi
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 20+ (or Bun)
 
 ### Install
+
 ```bash
 bun install
 # or
@@ -111,11 +113,13 @@ npm install
 ```
 
 ### Run dev server
+
 ```bash
 bun run dev
 ```
 
 ### Production build
+
 ```bash
 bun run build
 ```
