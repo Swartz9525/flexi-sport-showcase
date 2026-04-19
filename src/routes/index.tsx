@@ -1,26 +1,42 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { HeroCarousel } from "@/components/HeroCarousel";
+import { Featured } from "@/components/Featured";
+import { Products } from "@/components/Products";
+import { About } from "@/components/About";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Arbet Sports (OPC) Pvt Ltd — Premium Sporting Equipment in India" },
+      {
+        name: "description",
+        content:
+          "Arbet Sports supplies premium cricket, badminton, fitness, jerseys & football gear to athletes, clubs and academies across India.",
+      },
+      { property: "og:title", content: "Arbet Sports — Built for Champions" },
+      {
+        property: "og:description",
+        content:
+          "Tournament-grade sports equipment, custom team jerseys, and bulk supply across India.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="min-h-screen bg-background">
+      <Navbar />
+      <HeroCarousel />
+      <Featured />
+      <Products />
+      <About />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
