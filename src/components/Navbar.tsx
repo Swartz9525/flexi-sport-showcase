@@ -60,7 +60,7 @@ export function Navbar() {
             <span className="font-display text-2xl text-primary-foreground">A</span>
           </div>
           <div className="leading-tight">
-            <div className="font-display text-xl tracking-wide text-secondary">
+            <div className="font-display text-xl tracking-wide text-primary">
               ARBEIT <span className="text-primary">SPORTS</span>
             </div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
